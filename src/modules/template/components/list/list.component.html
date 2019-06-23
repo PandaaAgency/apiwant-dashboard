@@ -1,0 +1,14 @@
+<ul class="templates">
+  <li *ngFor="let template of templates" class="templatates"
+      routerLink="/templates/{{template.id}}"
+      [class.selected]="template === selectedTemplate"
+    >
+    <span class="badge">{{template.id}}</span>
+    <p>
+      <b>Periodicity : </b>{{template.periodicity}}
+    </p>
+    <p>
+      <b>Url : </b>{{template.url}}
+    </p>
+  </li>
+</ul>
